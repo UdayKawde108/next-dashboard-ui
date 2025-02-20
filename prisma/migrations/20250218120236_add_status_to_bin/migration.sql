@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "Bin" ADD COLUMN     "status" TEXT NOT NULL DEFAULT 'NORMAL';

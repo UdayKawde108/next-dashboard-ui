@@ -1,0 +1,184 @@
+// This is your Prisma schema file
+// Learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Admin {
+  id       String @id
+  username String @unique
+}
+
+enum UserSex {
+  MALE
+  FEMALE
+}
+
+model Smaster {
+  id        String   @id @default(cuid())
+  username  String   @unique
+  name      String
+  surname   String
+  email     String?  @unique
+  phone     String?  @unique
+  address   String
+  img       String?
+  sex       UserSex
+  createdAt DateTime @default(now())
+  birthday  DateTime @default(now())
+
+  areaId    Int?   
+  area      Area?   @relation("AreaToSmaster", fields: [areaId], references: [id], onDelete: SetNull)
+
+  tasks      Task[]  
+  sworkers   Sworker[] @relation("SworkerSmaster")
+  attendance Attendance[]
+  bins       Bin[]  // Relation with bins
+}
+
+model Sworker {
+  id        String   @id
+  username  String   @unique
+  name      String
+  surname   String
+  email     String?  @unique
+  phone     String?  @unique
+  address   String
+  img       String?
+  sex       UserSex
+  createdAt DateTime @default(now())
+
+  userId    String
+  user      User @relation(fields: [userId], references: [id])
+
+  attendance Attendance[]
+  smasters   Smaster[] @relation("SworkerSmaster")
+  tasks      Task[]    @relation("TaskSworkers")
+  bins       Bin[]     @relation("BinSworker") // Many-to-many relation with bins
+
+  BinSworker BinSworker[]
+}
+
+model User {
+  id        String   @id
+  username  String   @unique
+  name      String
+  surname   String
+  email     String?
+  phone     String?
+  address   String
+  img       String?
+  sex       UserSex
+  createdAt DateTime @default(now())
+
+  role      String   @default("USER") // ✅ Added default role to avoid migration errors
+
+  sworkers Sworker[]
+}
+
+model Area {
+  id       Int    @id @default(autoincrement())
+  name     String @unique
+
+  smasters Smaster[] @relation("AreaToSmaster")
+  tasks    Task[]    @relation("AreaToTask")
+  bins     Bin[]     // Relation with bins in this area
+}
+
+model Task {
+  id        Int      @id @default(autoincrement())
+  name      String
+  day       Day
+  startTime DateTime
+  endTime   DateTime
+
+  areaId    Int?  
+  area      Area?   @relation("AreaToTask", fields: [areaId], references: [id], onDelete: SetNull)
+
+  smasterId String
+  smaster   Smaster    @relation(fields: [smasterId], references: [id])
+  sworkers  Sworker[]  @relation("TaskSworkers")
+}
+
+model Announcement {
+  id          Int      @id @default(autoincrement())
+  title       String
+  description String
+  date        DateTime
+}
+
+model Attendance {
+  id        String   @id @default(uuid()) 
+  date      DateTime @default(now())
+  time      String?  
+  class     String?  
+  mobile    String?  
+  name      String?  
+  role      String?  @default("WORKER") // ✅ Added default role
+
+  status    String   @default("PRESENT") // ✅ Added default status
+  userId    String?  // ✅ Made optional to avoid migration conflicts
+
+  sworkerId String  
+  sworker   Sworker @relation(fields: [sworkerId], references: [id], onDelete: Cascade)
+
+  smasterId String?  
+  smaster   Smaster? @relation(fields: [smasterId], references: [id], onDelete: Cascade)
+
+  present   Boolean @default(true) 
+}
+
+model Event {
+  id          String   @id @default(uuid())
+  title       String
+  description String?
+  startTime   DateTime
+}
+
+// ✅ Updated Bin model with proper relations
+model Bin {
+  id         String   @id @default(uuid()) 
+  location   String   // Address or description of the bin location
+  latitude   Float    // Latitude for map integration
+  longitude  Float    // Longitude for map integration
+  level      Int      // Bin fill level (0-100%)
+  threshold  Int      // Overflow threshold (e.g., 70%)
+  areaId     Int?     // Foreign key to Area model
+  smasterId  String?  // Foreign key to Smaster (assigned sanitation master)
+  createdAt  DateTime @default(now()) 
+  updatedAt  DateTime @updatedAt
+  status     String  @default("NORMAL") // ✅ Make sure this field exists
+
+  area       Area?    @relation(fields: [areaId], references: [id], onDelete: SetNull)
+  smaster    Smaster? @relation(fields: [smasterId], references: [id], onDelete: SetNull)
+  sworkers   Sworker[] @relation("BinSworker") // Many-to-many relation for assigned sanitation workers
+
+  BinSworker BinSworker[]
+}
+
+// ✅ Many-to-many relation between Bins and Sworkers
+model BinSworker {
+  binId     String
+  sworkerId String
+
+  bin     Bin     @relation(fields: [binId], references: [id], onDelete: Cascade)
+  sworker Sworker @relation(fields: [sworkerId], references: [id], onDelete: Cascade)
+
+  @@id([binId, sworkerId]) // Composite primary key
+}
+
+enum Day {
+  Monday
+  Tuesday
+  Wednesday
+  Thursday
+  Friday
+  Saturday
+  Sunday
+}

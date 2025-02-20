@@ -1,13 +1,13 @@
 // TEMPORARY DATA
 
-export let role = "admin";
+//export let role = "user";
 
 export const teachersData = [
   {
     id: 1,
     teacherId: "1234567890",
-    name: "John Doe",
-    email: "john@doe.com",
+    name: "Amit J",
+    email: "amit@j.com",
     photo:
       "https://images.pexels.com/photos/2888150/pexels-photo-2888150.jpeg?auto=compress&cs=tinysrgb&w=1200",
     phone: "1234567890",
@@ -18,8 +18,8 @@ export const teachersData = [
   {
     id: 2,
     teacherId: "1234567890",
-    name: "Jane Doe",
-    email: "jane@doe.com",
+    name: "Ram S",
+    email: "Ram@s.com",
     photo:
       "https://images.pexels.com/photos/936126/pexels-photo-936126.jpeg?auto=compress&cs=tinysrgb&w=1200",
     phone: "1234567890",
@@ -30,8 +30,8 @@ export const teachersData = [
   {
     id: 3,
     teacherId: "1234567890",
-    name: "Mike Geller",
-    email: "mike@geller.com",
+    name: "Om P",
+    email: "Om@p.com",
     photo:
       "https://images.pexels.com/photos/428328/pexels-photo-428328.jpeg?auto=compress&cs=tinysrgb&w=1200",
     phone: "1234567890",
@@ -42,7 +42,7 @@ export const teachersData = [
   {
     id: 4,
     teacherId: "1234567890",
-    name: "Jay French",
+    name: "Jay S",
     email: "jay@gmail.com",
     photo:
       "https://images.pexels.com/photos/1187765/pexels-photo-1187765.jpeg?auto=compress&cs=tinysrgb&w=1200",
@@ -54,8 +54,8 @@ export const teachersData = [
   {
     id: 5,
     teacherId: "1234567890",
-    name: "Jane Smith",
-    email: "jane@gmail.com",
+    name: "Jagan P",
+    email: "Jagan@P.com",
     photo:
       "https://images.pexels.com/photos/1102341/pexels-photo-1102341.jpeg?auto=compress&cs=tinysrgb&w=1200",
     phone: "1234567890",
@@ -66,8 +66,8 @@ export const teachersData = [
   {
     id: 6,
     teacherId: "1234567890",
-    name: "Anna Santiago",
-    email: "anna@gmail.com",
+    name: "Asmita K",
+    email: "Asmita@gmail.com",
     photo:
       "https://images.pexels.com/photos/712513/pexels-photo-712513.jpeg?auto=compress&cs=tinysrgb&w=1200",
     phone: "1234567890",
@@ -78,7 +78,7 @@ export const teachersData = [
   {
     id: 7,
     teacherId: "1234567890",
-    name: "Allen Black",
+    name: "Ram S",
     email: "allen@black.com",
     photo:
       "https://images.pexels.com/photos/1438081/pexels-photo-1438081.jpeg?auto=compress&cs=tinysrgb&w=1200",
@@ -90,8 +90,8 @@ export const teachersData = [
   {
     id: 8,
     teacherId: "1234567890",
-    name: "Ophelia Castro",
-    email: "ophelia@castro.com",
+    name: "Omkar B",
+    email: "Omkar@B.com",
     photo:
       "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=1200",
     phone: "1234567890",
@@ -102,8 +102,8 @@ export const teachersData = [
   {
     id: 9,
     teacherId: "1234567890",
-    name: "Derek Briggs",
-    email: "derek@briggs.com",
+    name: "Aman K",
+    email: "Aman@k.com",
     photo:
       "https://images.pexels.com/photos/842980/pexels-photo-842980.jpeg?auto=compress&cs=tinysrgb&w=1200",
     phone: "1234567890",
@@ -114,8 +114,8 @@ export const teachersData = [
   {
     id: 10,
     teacherId: "1234567890",
-    name: "John Glover",
-    email: "john@glover.com",
+    name: "Laxman P",
+    email: "Laxman@P.com",
     photo:
       "https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=1200",
     phone: "1234567890",
@@ -129,8 +129,8 @@ export const studentsData = [
   {
     id: 1,
     studentId: "1234567890",
-    name: "John Doe",
-    email: "john@doe.com",
+    name: "Ram S",
+    email: "Ram@s.com",
     photo:
       "https://images.pexels.com/photos/2888150/pexels-photo-2888150.jpeg?auto=compress&cs=tinysrgb&w=1200",
     phone: "1234567890",
@@ -141,8 +141,8 @@ export const studentsData = [
   {
     id: 2,
     studentId: "1234567890",
-    name: "Jane Doe",
-    email: "jane@doe.com",
+    name: "Jayesh M",
+    email: "Jayesh@M.com",
     photo:
       "https://images.pexels.com/photos/936126/pexels-photo-936126.jpeg?auto=compress&cs=tinysrgb&w=1200",
     phone: "1234567890",
@@ -153,8 +153,8 @@ export const studentsData = [
   {
     id: 3,
     studentId: "1234567890",
-    name: "Mike Geller",
-    email: "mike@geller.com",
+    name: "Mani R",
+    email: "Mani@r.com",
     photo:
       "https://images.pexels.com/photos/428328/pexels-photo-428328.jpeg?auto=compress&cs=tinysrgb&w=1200",
     phone: "1234567890",
@@ -165,7 +165,7 @@ export const studentsData = [
   {
     id: 4,
     studentId: "1234567890",
-    name: "Jay French",
+    name: "Jay Y",
     email: "jay@gmail.com",
     photo:
       "https://images.pexels.com/photos/1187765/pexels-photo-1187765.jpeg?auto=compress&cs=tinysrgb&w=1200",
@@ -177,8 +177,8 @@ export const studentsData = [
   {
     id: 5,
     studentId: "1234567890",
-    name: "Jane Smith",
-    email: "jane@gmail.com",
+    name: "Shubham M",
+    email: "Shubham@M.com",
     photo:
       "https://images.pexels.com/photos/1102341/pexels-photo-1102341.jpeg?auto=compress&cs=tinysrgb&w=1200",
     phone: "1234567890",
@@ -189,8 +189,8 @@ export const studentsData = [
   {
     id: 6,
     studentId: "1234567890",
-    name: "Anna Santiago",
-    email: "anna@gmail.com",
+    name: "Aniruddha J",
+    email: "Aniruddha@gmail.com",
     photo:
       "https://images.pexels.com/photos/712513/pexels-photo-712513.jpeg?auto=compress&cs=tinysrgb&w=1200",
     phone: "1234567890",
@@ -201,8 +201,8 @@ export const studentsData = [
   {
     id: 7,
     studentId: "1234567890",
-    name: "Allen Black",
-    email: "allen@black.com",
+    name: "Omkar A",
+    email: "Omkar@a.com",
     photo:
       "https://images.pexels.com/photos/1438081/pexels-photo-1438081.jpeg?auto=compress&cs=tinysrgb&w=1200",
     phone: "1234567890",
@@ -225,8 +225,8 @@ export const studentsData = [
   {
     id: 9,
     studentId: "1234567890",
-    name: "Derek Briggs",
-    email: "derek@briggs.com",
+    name: "Balan M",
+    email: "Balan@M.com",
     photo:
       "https://images.pexels.com/photos/842980/pexels-photo-842980.jpeg?auto=compress&cs=tinysrgb&w=1200",
     phone: "1234567890",
@@ -237,8 +237,8 @@ export const studentsData = [
   {
     id: 10,
     studentId: "1234567890",
-    name: "John Glover",
-    email: "john@glover.com",
+    name: "Ram S",
+    email: "Ram@s.com",
     photo:
       "https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=1200",
     phone: "1234567890",
@@ -251,7 +251,7 @@ export const studentsData = [
 export const parentsData = [
   {
     id: 1,
-    name: "John Doe",
+    name: "Ram A",
     students: ["Sarah Brewer"],
     email: "john@doe.com",
     phone: "1234567890",
@@ -259,7 +259,7 @@ export const parentsData = [
   },
   {
     id: 2,
-    name: "Jane Doe",
+    name: "Laxman A",
     students: ["Cecilia Bradley"],
     email: "jane@doe.com",
     phone: "1234567890",
@@ -267,7 +267,7 @@ export const parentsData = [
   },
   {
     id: 3,
-    name: "Mike Geller",
+    name: "Suman S",
     students: ["Fanny Caldwell"],
     email: "mike@geller.com",
     phone: "1234567890",
@@ -275,7 +275,7 @@ export const parentsData = [
   },
   {
     id: 4,
-    name: "Jay French",
+    name: "Amit P",
     students: ["Mollie Fitzgerald", "Ian Bryant"],
     email: "mike@geller.com",
     phone: "1234567890",
@@ -283,7 +283,7 @@ export const parentsData = [
   },
   {
     id: 5,
-    name: "Jane Smith",
+    name: "Shrikant S",
     students: ["Mable Harvey"],
     email: "mike@geller.com",
     phone: "1234567890",
@@ -291,7 +291,7 @@ export const parentsData = [
   },
   {
     id: 6,
-    name: "Anna Santiago",
+    name: "Omkar D",
     students: ["Joel Lambert"],
     email: "mike@geller.com",
     phone: "1234567890",
@@ -299,7 +299,7 @@ export const parentsData = [
   },
   {
     id: 7,
-    name: "Allen Black",
+    name: "Nagrag J",
     students: ["Carrie Tucker", "Lilly Underwood"],
     email: "mike@geller.com",
     phone: "1234567890",
@@ -307,7 +307,7 @@ export const parentsData = [
   },
   {
     id: 8,
-    name: "Ophelia Castro",
+    name: "Laxman A",
     students: ["Alexander Blair"],
     email: "mike@geller.com",
     phone: "1234567890",
@@ -315,7 +315,7 @@ export const parentsData = [
   },
   {
     id: 9,
-    name: "Derek Briggs",
+    name: "Sumit S",
     students: ["Susan Webster", "Maude Stone"],
     email: "mike@geller.com",
     phone: "1234567890",
@@ -323,7 +323,7 @@ export const parentsData = [
   },
   {
     id: 10,
-    name: "John Glover",
+    name: "Aniruddha J",
     students: ["Stella Scott"],
     email: "mike@geller.com",
     phone: "1234567890",
@@ -919,145 +919,93 @@ export const announcementsData = [
 // YOU SHOULD CHANGE THE DATES OF THE EVENTS TO THE CURRENT DATE TO SEE THE EVENTS ON THE CALENDAR
 export const calendarEvents = [
   {
-    title: "Math",
+    title: "Bin Overflow Alert - Andheri",
     allDay: false,
-    start: new Date(2024, 7, 12, 8, 0),
-    end: new Date(2024, 7, 12, 8, 45),
+    start: new Date(2025, 1, 12, 8, 0),
+    end: new Date(2025, 1, 12, 8, 30),
   },
   {
-    title: "English",
+    title: "Scheduled Bin Pickup - Bandra",
     allDay: false,
-    start: new Date(2024, 7, 12, 9, 0),
-    end: new Date(2024, 7, 12, 9, 45),
+    start: new Date(2025, 1, 12, 10, 0),
+    end: new Date(2025, 1, 12, 10, 30),
   },
   {
-    title: "Biology",
+    title: "Maintenance - Malad Bin Sensor",
     allDay: false,
-    start: new Date(2024, 7, 12, 10, 0),
-    end: new Date(2024, 7, 12, 10, 45),
+    start: new Date(2025, 1, 12, 12, 0),
+    end: new Date(2025, 1, 12, 12, 45),
   },
   {
-    title: "Physics",
+    title: "Inspection - Dadar Area",
     allDay: false,
-    start: new Date(2024, 7, 12, 11, 0),
-    end: new Date(2024, 7, 12, 11, 45),
+    start: new Date(2025, 1, 12, 14, 0),
+    end: new Date(2025, 1, 12, 14, 30),
   },
   {
-    title: "Chemistry",
+    title: "Emergency Cleanup - CST",
     allDay: false,
-    start: new Date(2024, 7, 12, 13, 0),
-    end: new Date(2024, 7, 12, 13, 45),
+    start: new Date(2025, 1, 12, 16, 0),
+    end: new Date(2025, 1, 12, 16, 45),
   },
   {
-    title: "History",
+    title: "Waste Collection Report Review",
     allDay: false,
-    start: new Date(2024, 7, 12, 14, 0),
-    end: new Date(2024, 7, 12, 14, 45),
+    start: new Date(2025, 1, 13, 9, 0),
+    end: new Date(2025, 1, 13, 9, 30),
   },
   {
-    title: "English",
+    title: "Bin Overflow Alert - Thane",
     allDay: false,
-    start: new Date(2024, 7, 13, 9, 0),
-    end: new Date(2024, 7, 13, 9, 45),
+    start: new Date(2025, 1, 13, 11, 0),
+    end: new Date(2025, 1, 13, 11, 30),
   },
   {
-    title: "Biology",
+    title: "Sensor Calibration - Navi Mumbai",
     allDay: false,
-    start: new Date(2024, 7, 13, 10, 0),
-    end: new Date(2024, 7, 13, 10, 45),
+    start: new Date(2025, 1, 13, 13, 0),
+    end: new Date(2025, 1, 13, 13, 45),
   },
   {
-    title: "Physics",
+    title: "Meeting with Sanitation Team",
     allDay: false,
-    start: new Date(2024, 7, 13, 11, 0),
-    end: new Date(2024, 7, 13, 11, 45),
-  },
-
-  {
-    title: "History",
-    allDay: false,
-    start: new Date(2024, 7, 13, 14, 0),
-    end: new Date(2024, 7, 13, 14, 45),
+    start: new Date(2025, 1, 13, 15, 0),
+    end: new Date(2025, 1, 13, 15, 45),
   },
   {
-    title: "Math",
+    title: "Public Awareness Campaign",
     allDay: false,
-    start: new Date(2024, 7, 14, 8, 0),
-    end: new Date(2024, 7, 14, 8, 45),
+    start: new Date(2025, 1, 14, 10, 0),
+    end: new Date(2025, 1, 14, 10, 45),
   },
   {
-    title: "Biology",
+    title: "Bin Replacement - Ghatkopar",
     allDay: false,
-    start: new Date(2024, 7, 14, 10, 0),
-    end: new Date(2024, 7, 14, 10, 45),
-  },
-
-  {
-    title: "Chemistry",
-    allDay: false,
-    start: new Date(2024, 7, 14, 13, 0),
-    end: new Date(2024, 7, 14, 13, 45),
+    start: new Date(2025, 1, 14, 12, 0),
+    end: new Date(2025, 1, 14, 12, 30),
   },
   {
-    title: "History",
+    title: "Sanitation Worker Training",
     allDay: false,
-    start: new Date(2024, 7, 14, 14, 0),
-    end: new Date(2024, 7, 13, 14, 45),
+    start: new Date(2025, 1, 14, 14, 0),
+    end: new Date(2025, 1, 14, 14, 45),
   },
   {
-    title: "English",
+    title: "Inspection - Mulund",
     allDay: false,
-    start: new Date(2024, 7, 15, 9, 0),
-    end: new Date(2024, 7, 15, 9, 45),
+    start: new Date(2025, 1, 15, 9, 0),
+    end: new Date(2025, 1, 15, 9, 30),
   },
   {
-    title: "Biology",
+    title: "Emergency Cleanup - Worli",
     allDay: false,
-    start: new Date(2024, 7, 15, 10, 0),
-    end: new Date(2024, 7, 15, 10, 45),
+    start: new Date(2025, 1, 15, 11, 0),
+    end: new Date(2025, 1, 15, 11, 45),
   },
   {
-    title: "Physics",
+    title: "Maintenance - Chembur",
     allDay: false,
-    start: new Date(2024, 7, 15, 11, 0),
-    end: new Date(2024, 7, 15, 11, 45),
-  },
-
-  {
-    title: "History",
-    allDay: false,
-    start: new Date(2024, 7, 15, 14, 0),
-    end: new Date(2024, 7, 15, 14, 45),
-  },
-  {
-    title: "Math",
-    allDay: false,
-    start: new Date(2024, 7, 16, 8, 0),
-    end: new Date(2024, 7, 16, 8, 45),
-  },
-  {
-    title: "English",
-    allDay: false,
-    start: new Date(2024, 7, 16, 9, 0),
-    end: new Date(2024, 7, 16, 9, 45),
-  },
-
-  {
-    title: "Physics",
-    allDay: false,
-    start: new Date(2024, 7, 16, 11, 0),
-    end: new Date(2024, 7, 16, 11, 45),
-  },
-  {
-    title: "Chemistry",
-    allDay: false,
-    start: new Date(2024, 7, 16, 13, 0),
-    end: new Date(2024, 7, 16, 13, 45),
-  },
-  {
-    title: "History",
-    allDay: false,
-    start: new Date(2024, 7, 16, 14, 0),
-    end: new Date(2024, 7, 16, 14, 45),
+    start: new Date(2025, 1, 15, 13, 0),
+    end: new Date(2025, 1, 15, 13, 45),
   },
 ];

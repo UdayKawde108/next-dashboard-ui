@@ -1,0 +1,7 @@
+-- AlterTable
+ALTER TABLE "Attendance" ADD COLUMN     "status" TEXT NOT NULL DEFAULT 'PRESENT',
+ADD COLUMN     "userId" TEXT,
+ALTER COLUMN "role" SET DEFAULT 'WORKER';
+
+-- AlterTable
+ALTER TABLE "User" ADD COLUMN     "role" TEXT NOT NULL DEFAULT 'USER';
