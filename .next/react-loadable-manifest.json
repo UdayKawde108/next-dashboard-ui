@@ -1,0 +1,44 @@
+{
+  "..\\node_modules\\@clerk\\nextjs\\dist\\esm\\app-router\\client\\ClerkProvider.js -> ./keyless-creator-reader.js": {
+    "id": "..\\node_modules\\@clerk\\nextjs\\dist\\esm\\app-router\\client\\ClerkProvider.js -> ./keyless-creator-reader.js",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_clerk_nextjs_dist_esm_app-router_client_keyless-creator-reader_js.js"
+    ]
+  },
+  "..\\node_modules\\@clerk\\nextjs\\dist\\esm\\app-router\\client\\keyless-cookie-sync.js -> ../keyless-actions.js": {
+    "id": "..\\node_modules\\@clerk\\nextjs\\dist\\esm\\app-router\\client\\keyless-cookie-sync.js -> ../keyless-actions.js",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_clerk_nextjs_dist_esm_app-router_keyless-actions_js.js"
+    ]
+  },
+  "components\\FormModal.tsx -> ./forms/AnnouncementForm": {
+    "id": "components\\FormModal.tsx -> ./forms/AnnouncementForm",
+    "files": [
+      "static/chunks/_app-pages-browser_src_components_forms_AnnouncementForm_tsx.js"
+    ]
+  },
+  "components\\FormModal.tsx -> ./forms/AreaForm": {
+    "id": "components\\FormModal.tsx -> ./forms/AreaForm",
+    "files": [
+      "static/chunks/_app-pages-browser_src_components_forms_AreaForm_tsx.js"
+    ]
+  },
+  "components\\FormModal.tsx -> ./forms/SmasterForm": {
+    "id": "components\\FormModal.tsx -> ./forms/SmasterForm",
+    "files": [
+      "static/chunks/_app-pages-browser_src_components_forms_SmasterForm_tsx.js"
+    ]
+  },
+  "components\\FormModal.tsx -> ./forms/SworkerForm": {
+    "id": "components\\FormModal.tsx -> ./forms/SworkerForm",
+    "files": [
+      "static/chunks/_app-pages-browser_src_components_forms_SworkerForm_tsx.js"
+    ]
+  },
+  "components\\FormModal.tsx -> ./forms/UsersForm": {
+    "id": "components\\FormModal.tsx -> ./forms/UsersForm",
+    "files": [
+      "static/chunks/_app-pages-browser_src_components_forms_UsersForm_tsx.js"
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/(dashboard)/list/binlocal/page": "app/(dashboard)/list/binlocal/page.js",
+  "/(dashboard)/list/smaster/page": "app/(dashboard)/list/smaster/page.js",
+  "/(dashboard)/list/binlevel/page": "app/(dashboard)/list/binlevel/page.js"
+}
